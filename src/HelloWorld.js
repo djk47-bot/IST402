@@ -18,6 +18,7 @@ export class HelloWorld extends LitElement {
     };
   }
 
+
   constructor() {
     super();
     this.title = 'Hey there';
@@ -26,6 +27,12 @@ export class HelloWorld extends LitElement {
 
   __increment() {
     this.counter += 1;
+  }
+  
+  __decrement() {
+    if(this.counter > 0){
+      this.counter--;
+    }
   }
 
   render() {
